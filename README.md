@@ -40,10 +40,10 @@ The method demonstrates a wide range of out-of-domain adaptations, including cha
 
 ## Launch in Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gE8pDv3hF0_0cF3VmHkNfby7rtrjgma0?usp=sharing )
-**Training/Model adaptation (`train.ipynb`)**
+**Training (`train.ipynb`)**
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1f08g48Sgyh-4z3LhZdbQOMTTE4HiPyR1?usp=sharing)
-**Inference/Image Generation (`inference.ipynb')** translate into English
+**Inference (`inference.ipynb`)** 
 
 ## Results
 Examples of results obtained on FFHQ for 5 different prompts (Elf, Witcher, Pixar, Mona Lisa, and Sketch).
