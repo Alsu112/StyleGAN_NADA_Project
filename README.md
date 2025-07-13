@@ -38,6 +38,13 @@ The method demonstrates a wide range of out-of-domain adaptations, including cha
 
 ![Directional_CLIP_Loss2](images/Directional_CLIP_Loss2.png "Directional_CLIP_Loss2")
 
+## Launch in Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gE8pDv3hF0_0cF3VmHkNfby7rtrjgma0?usp=sharing )
+**Training/Model adaptation (`train.ipynb`)**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1f08g48Sgyh-4z3LhZdbQOMTTE4HiPyR1?usp=sharing)
+**Inference/Image Generation (`inference.ipynb')** translate into English
+
 ## Results
 Examples of results obtained on FFHQ for 5 different prompts (Elf, Witcher, Pixar, Mona Lisa, and Sketch).
 ![Examples of results on FFHQ for 5 different prompts (Elf, Witcher, Pixar, Mona Lisa, and Sketch)](images/Experiments.jpg "Generated images for various prompts")
