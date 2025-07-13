@@ -19,7 +19,7 @@ Traditional generative models, such as GANs, typically require extensive dataset
 
 Instead of directly deceiving the classifier, this approach utilizes **Directional CLIP Loss** by encoding the difference between domains as a textual direction in the CLIP embedding space. A new loss function and training architecture are proposed, employing two generators:
 
-![Directional CLIP Loss](images/Directional CLIP Loss.png "Directional CLIP Loss")
+![Directional_CLIP_Loss](images/Directional_CLIP_Loss.png "Directional_CLIP_Loss")
 
 * One generator (`G_frozen`) remains **frozen**, intended to provide samples from the source domain.
 * The second generator (`G_train`) is optimized to create images that differ from the original source only in the text-described inter-domain direction within the CLIP space.
@@ -28,7 +28,7 @@ Instead of directly deceiving the classifier, this approach utilizes **Direction
 
 The StyleGAN architecture consists of a Mapping Network (transforming a random `z` vector into a `w` vector), affine transformations (mapping `w` to the `w+` space), and generator blocks. A critical aspect of this method is the partial unfreezing of layers. Initially, StyleGAN's Mapping Network, affine transformations, and all `toRGB` layers are frozen. To determine which specific layers to unfreeze, a latent vector in the `W+` space is initialized and made trainable, while the entire generator remains frozen. After several training iterations using a **Global Loss function (`Lglobal`)** — which is defined as the cosine distance in CLIP space between the generated image `G(w)` and the target class text description `ttarget` — changes in the latent vectors are observed. The layers corresponding to the most significantly changed latent vectors are then unfrozen.
 
-![Freezing Layers](images/Freezing Layers.png "Freezing Layers")
+![Freezing_Layers](images/Freezing_Layers.png "Freezing_Layers")
 
 #### Training Process
 
@@ -36,7 +36,7 @@ During the main training phase, the latent vector is made non-trainable (using `
 
 The method demonstrates a wide range of out-of-domain adaptations, including changes in style, texture, and significant modifications to form, from realistic to fantastical. These results are achieved through a simple text interface and training processes completed in a matter of minutes.
 
-![Directional CLIP Loss 2](images/Directional CLIP Loss 2.png "Directional CLIP Loss 2")
+![Directional_CLIP_Loss2](images/Directional_CLIP_Loss2.png "Directional_CLIP_Loss2")
 
 ## Results
 Examples of results obtained on FFHQ for 5 different prompts (Elf, Witcher, Pixar, Mona Lisa, and Sketch).
